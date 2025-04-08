@@ -100,7 +100,5 @@ npm start
 
 The frontend will open at [http://localhost:3000](http://localhost:3000).
 
----
 
-Thank you for reviewing my submission!
 
