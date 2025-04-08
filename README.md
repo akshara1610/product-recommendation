@@ -1,4 +1,3 @@
-# i95dev AI Engineering Intern - Take-Home Assignment
 
 ## AI-Powered Product Recommendation Engine
 
@@ -77,8 +76,6 @@ cd backend
 ```bash
 python -m venv venv
 
-# Windows
-venv\Scripts\activate
 
 # macOS/Linux
 source venv/bin/activate
@@ -101,7 +98,7 @@ cd frontend
 ```
 2. Install dependencies:
 ```bash
-npm install
+npm i
 ```
 3. Start the React development server:
 ```bash
