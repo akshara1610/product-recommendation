@@ -58,13 +58,6 @@ Prompt engineering was central to creating accurate, context-aware recommendatio
 
 ---
 
-### Future Enhancements
-- User authentication and profile persistence
-- A/B testing for prompt variations
-- Comprehensive unit and integration tests
-
----
-
 ## Setup Instructions
 
 ### Backend Setup
