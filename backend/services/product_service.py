@@ -12,6 +12,7 @@ class ProductService:
         """
         self.data_path = config['DATA_PATH']
         self.products = self._load_products()
+        #print(self.products)
     
     def _load_products(self):
         """

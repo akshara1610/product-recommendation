@@ -32,6 +32,7 @@ function App() {
       try {
         const data = await fetchProducts();
         setProducts(data);
+        console.log(data);
       } catch (error) {
         console.error('Error fetching products:', error);
       }
@@ -58,6 +59,7 @@ function App() {
   
   // Get recommendations based on preferences and browsing history
   const handleGetRecommendations = async () => {
+    console.log(userPreferences, browsingHistory);
     setIsLoading(true);
     try {
       const data = await getRecommendations(userPreferences, browsingHistory);

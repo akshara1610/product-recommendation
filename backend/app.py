@@ -47,10 +47,12 @@ async def get_recommendations(request: RecommendationRequest):
     Generate personalized product recommendations based on user preferences
     and browsing history
     """
+    #print(request)
     try:
         # Extract user preferences and browsing history from request
         user_preferences = request.preferences.dict()
         browsing_history = request.browsing_history
+        print(user_preferences,browsing_history)
         
         # Use the LLM service to generate recommendations
         recommendations = llm_service.generate_recommendations(
@@ -74,4 +76,4 @@ async def generic_exception_handler(request: Request, exc: Exception):
 
 if __name__ == "__main__":
     # Run the API with uvicorn
-    uvicorn.run("app:app", host="0.0.0.0", port=5000, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8080, reload=True)
